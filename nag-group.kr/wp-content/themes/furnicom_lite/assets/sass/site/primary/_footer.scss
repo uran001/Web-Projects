@@ -1,0 +1,13 @@
+.site-info {
+	font-size: .857rem;
+	line-height: 1.75;
+	.site-info-wrap{
+		font-size: 12px;
+		.footer-copyright a {
+			padding-left: 14px;
+		}
+	}
+}
+
+@import "footer/layout-style-1";
+

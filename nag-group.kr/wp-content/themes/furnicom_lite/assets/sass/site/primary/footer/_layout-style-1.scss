@@ -1,0 +1,143 @@
+.site-footer.style-1,
+.site-footer.style-3 {
+	.footer-container {
+		padding: 50px 0;
+
+		@include media-breakpoint-up(md) {
+			padding: 13px 0;
+		}
+	}
+	.site-info {
+		text-align: center;
+
+		.contact-block,
+		.footer-logo,
+		.footer-copyright,
+		.footer-menu {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.social-list {
+			margin-top: 35px;
+			margin-bottom: 10px;
+		}
+
+		.contact-block {
+			@include font-size(.875);
+		}
+
+		@include media-breakpoint-up(md) {
+			text-align: left;
+
+			&-wrap {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+				@include grid-indent(15px, 'margin');
+			}
+
+			&-block {
+				display: flex;
+				align-items: center;
+			}
+
+			.footer-menu + .site-info-block {
+				width: 100%;
+				justify-content: space-between;
+				order: -1;
+			}
+
+			.social-list {
+				margin-top: 10px;
+			}
+
+			.social-list {
+				flex-shrink: 0;
+			}
+
+			.footer-logo {
+				margin-right: 10px;
+			}
+			.contact-block {
+				margin-right: 20px;
+				font-size: inherit;
+			}
+		}
+	}
+}
+
+.site-footer.style-1 {
+	.footer-container {
+		padding-top: 0;
+		padding-bottom: 0;
+
+		.site-info {
+			position: relative;
+			z-index: 10;
+
+
+			&:before {
+				left: -100%;
+				@media (max-width: 900px) {
+					left: 0%;
+				}
+			}
+			&:after {
+				right: 10;
+				@media (max-width: 900px) {
+					right: 0%;
+				}
+			}
+		}
+		.footer-logo {
+			@include media-breakpoint-up(lg) {
+				margin-top: 5px;
+			}
+		}
+		.site-info-block {
+			&:empty {
+				display: none;
+			}
+		}
+		.site-info-first-row {
+			.site-info-wrap {
+				padding-top: 14px;
+				padding-bottom: 15px;
+			}
+		}
+		.site-info {
+			.contact-block,
+			.footer-copyright,
+			.social-list {
+				margin-top: 9px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+	.site-info.site-info-first-row {
+		&:before,
+		&:after {
+			content: '';
+			width: 100vw;
+			height: 100%;
+			position: absolute;
+			border-width: 1px 0px 1px 0px;
+			border-style: solid;
+			border-color: #7f8088;
+			top: 0;
+			background-color: inherit;
+			z-index: -1;
+		}
+	}
+}
+
+.site-footer.style-3 {
+	.site-info {
+		@include media-breakpoint-up(lg) {
+			.contact-block {
+				margin-right: 50px;
+			}
+		}
+	}
+}

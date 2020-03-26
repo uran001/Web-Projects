@@ -1,0 +1,25 @@
+.jet-posts {
+	.jet-posts__inner-box {
+		> * {
+			&:not(:first-child) {
+				margin-top: 20px;
+
+				&.entry-meta,
+				&.entry-excerpt {
+					margin-top: 10px;
+				}
+			}
+		}
+		.post-thumbnail__wrap {
+			position: relative;
+
+			.post__date-circle {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				z-index: 10;
+				display: none;
+			}
+		}
+	}
+}

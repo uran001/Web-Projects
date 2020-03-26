@@ -1,0 +1,29 @@
+/* #Footer */
+.site-footer {
+	background-color: $footer_bg;
+}
+.site-footer.style-1 .site-info-first-row {
+	background-color: $footer_bg_first;
+}
+.footer-area-wrap {
+	background-color: $footer_widgets_bg;
+}
+
+/* ##Invert Footer Style*/
+.invert.footer-area-wrap,
+.invert.footer-container {
+	color: @darken($invert_text_color, 30);
+}
+
+.invert.footer-area-wrap .posted-by {
+    color: @lighten($invert_text_color, 10);
+}
+
+.footer-container.invert .footer-copyright a {
+	color: @darken($invert_text_color, 30);
+}
+
+
+.footer-container.invert .footer-copyright a:hover {
+	color: @lighten($invert_text_color, 10);
+}

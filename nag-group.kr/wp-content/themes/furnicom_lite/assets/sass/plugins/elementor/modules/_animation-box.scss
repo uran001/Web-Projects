@@ -1,0 +1,38 @@
+.elementor-jet-animated-box {
+	.jet-animated-box {
+		.jet-animated-box__front {
+			border-radius: $border__radius;
+			box-shadow: $box__shadow;
+			.jet-animated-box__inner {
+				position: absolute;
+				left: 0;
+				display: block;
+				.jet-animated-box__content {
+					display: block;
+					.jet-animated-box__subtitle span {
+						font-size: 24px;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		.jet-animated-box__back {
+			.jet-animated-box__inner {
+				position: absolute;
+				left: 0;
+				display: block;
+				.jet-animated-box__content {
+					display: block;
+					.jet-animated-box__subtitle span {
+						font-size: 24px;
+						font-weight: 500;
+					}
+					.jet-animated-box__description {
+						max-height: 160px;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}
+}

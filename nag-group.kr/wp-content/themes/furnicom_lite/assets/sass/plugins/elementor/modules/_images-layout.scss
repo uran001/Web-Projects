@@ -1,0 +1,22 @@
+.elementor-widget-jet-images-layout {
+	.jet-elements {
+		.jet-images-layout__list {
+			.salvattore-column {
+				.jet-images-layout__content {
+					.jet-images-layout-icon-inner i:before{
+						position: absolute;
+						top: 20%;
+						left: 50%;
+						transform: translateX(-50%);
+						@media (min-width: 1500px) {
+							top: 28%;
+						}
+						@include media-breakpoint-down(xs) {
+							top: 30%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

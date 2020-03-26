@@ -1,0 +1,44 @@
+.elementor-element {
+	.elementor-jet-slider {
+		.jet-slider {
+			.jet-slider__content {
+				.jet-slider__content-item {
+					position: absolute;
+					top: 12%;
+					left: 50%;
+					.jet-slider__content-inner {
+						display: block;
+						right: 50%;
+					}
+				}
+			}
+			.sp-buttons {
+				position: absolute;
+				top: 30%;
+				left: 95%;
+				display: flex;
+				flex-direction: column;
+				counter-increment: counter;
+				@include media-breakpoint-down(sm) {
+					left: 88%;
+					top: 36%;
+				}
+				.sp-button {
+					counter-increment: counter1;
+					&:before {
+						content: counters(counter1, ".", decimal-leading-zero);
+					}
+				}
+			}
+			.jet-slider__items {
+				.jet-slider__item {
+					.sp-image-container:after {
+						@include media-breakpoint-down(sm) {
+							opacity: 0.4;
+						}
+					}
+				}
+			}
+		}
+	}
+}
